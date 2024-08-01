@@ -6,6 +6,7 @@ import {
   IoPerson,
   IoLocationSharp,
   IoMailSharp,
+  IoBriefcase,
 } from "react-icons/io5";
 
 const About = memo(({ refs }) => {
@@ -23,10 +24,15 @@ const About = memo(({ refs }) => {
           <b className="info-title">"Detail is quality."</b>
           <div className="info">
             <br />
-            Hello, I am May Kim, a passionate developer who continuously seeks growth. I love learning new features and developing various projects with interesting ideas.
-            I studied web development in Seattle and currently work as a full stack developer at Digital Aid Seattle.<br></br>
-            As the saying goes, "Detail is quality," I meticulously check and recheck to ensure no details are missed, creating high-quality work.
-            I primarily use TypeScript and JavaScript, but I also work with Python and Java.<br></br>
+            Hello, I am May Kim, a passionate developer who continuously seeks
+            growth. I love learning new features and developing various projects
+            with interesting ideas. I studied web development in Seattle and
+            currently work as a full stack developer at Digital Aid Seattle.
+            <br></br>
+            As the saying goes, "Detail is quality," I meticulously check and
+            recheck to ensure no details are missed, creating high-quality work.
+            I primarily use TypeScript and JavaScript, but I also work with
+            Python and Java.<br></br>
           </div>
           <ul>
             <li>
@@ -44,11 +50,16 @@ const About = memo(({ refs }) => {
                 <IoMailSharp className="icon" /> devmay202@gmail.com
               </div>
             </li>
-            {/* <li>
+            <li>
               <div className="info-li">
-                <IoCalendarClearOutline className="icon" /> 
+              <IoBriefcase className="icon" /> <a
+                  href="https://www.digitalaidseattle.org/project/recjTnXhnU7hkRDDb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                > Digital Aid Seattle
+                </a>
               </div>
-            </li> */}
+            </li>
           </ul>
         </div>
       </div>
