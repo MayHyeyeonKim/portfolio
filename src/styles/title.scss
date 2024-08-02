@@ -40,12 +40,12 @@
     align-items: center;
     padding: 10px;
     box-sizing: border-box;
+    word-break: keep-all;
 
     h1 {
       font-size: 60px;
       margin-bottom: 20px;
       margin-top: 20px;
-      word-break: keep-all;
     }
 
     h4 {
