@@ -9,7 +9,7 @@ const Title = memo(() => {
       <div className="title_background"></div>
       <div className="title_filter"></div>{" "}
       <div className="title_contents">
-        <h1>JavaScript, TypeScript, React, Node, MongoDB </h1>
+        <h1>Detail oriented software developer</h1>
         <div className="line"></div>
         <h1>May Kim</h1>
         <h2>Web Portfolio</h2>
