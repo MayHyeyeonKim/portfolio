@@ -24,7 +24,8 @@ import {
   Mysql,
   Postgresql,
   Mongodb,
-  Nextdotjs, // Next.js 아이콘 import
+  Nextdotjs,
+  Airtable,
 } from "@icons-pack/react-simple-icons";
 
 const Skills = memo(({ refs }) => {
@@ -171,6 +172,12 @@ const Skills = memo(({ refs }) => {
               <Mongodb color="#47A248" size={50} />
             </div>
             <p className="skill-info">MongoDB</p>
+          </div>
+          <div className="skill-group">
+            <div className="skill">
+              <Airtable size={50} />
+            </div>
+            <p className="skill-info">Airtable</p>
           </div>
         </div>
       </div>
