@@ -8,13 +8,19 @@ import {
   Reduxsaga,
   Sass,
   Jest,
+  Bootstrap,
+  Tailwindcss,
   Javascript,
   Html5,
   CssThree,
+  Materialui,
   Nodedotjs,
   Express,
+  Springboot,
+  Django,
   Java,
   Python,
+  Postman,
   Mysql,
   Postgresql,
   Mongodb,
@@ -82,6 +88,24 @@ const Skills = memo(({ refs }) => {
             </div>
             <p className="skill-info">Jest</p>
           </div>
+          <div className="skill-group">
+            <div className="skill">
+              <Materialui color="#007fff" size={50} />
+            </div>
+            <p className="skill-info">Mui</p>
+          </div>
+          <div className="skill-group">
+            <div className="skill">
+              <Bootstrap color="#7f29fa" size={50} />
+            </div>
+            <p className="skill-info">Bootstrap</p>
+          </div>
+          <div className="skill-group">
+            <div className="skill">
+              <Tailwindcss color="#36b7f0" size={50} />
+            </div>
+            <p className="skill-info">Tailwind</p>
+          </div>
         </div>
         <h3 className="skill-title">backend</h3>
         <div className="skills-infos">
@@ -105,9 +129,27 @@ const Skills = memo(({ refs }) => {
           </div>
           <div className="skill-group">
             <div className="skill">
+              <Springboot color="#69ad3c" size={50} />
+            </div>
+            <p className="skill-info">Spring boot</p>
+          </div>
+          <div className="skill-group">
+            <div className="skill">
               <Python color="#3776AB" size={50} />
             </div>
             <p className="skill-info">Python</p>
+          </div>
+          <div className="skill-group">
+            <div className="skill">
+              <Django color="#0c4b33" size={50} />
+            </div>
+            <p className="skill-info">Django</p>
+          </div>
+          <div className="skill-group">
+            <div className="skill">
+              <Postman color="#ff6b34" size={50} />
+            </div>
+            <p className="skill-info">Postman</p>
           </div>
         </div>
         <h3 className="skill-title">data</h3>
