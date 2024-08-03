@@ -45,9 +45,10 @@ $ruler: 16px;
         }
         .title {
           margin-top: 280px;
-          font-size: 30px;
+          font-size: 28px;
           font-weight: bold;
           color: dimgray;
+          word-break: keep-all;
         }
         .contents {
           color: rgb(126, 126, 126);
