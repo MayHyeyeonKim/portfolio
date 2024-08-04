@@ -30,7 +30,7 @@ function App() {
   const handleScroll = (myTop) => {
     let Top = 0;
     if (myTop === 'about') {
-      Top = aboutRef.current.offsetTop - 60;
+      Top = aboutRef.current.offsetTop-60;
     } else if(myTop === 'skills'){
       Top = skillsRef.current.offsetTop - 60;
     } else if (myTop === 'portfolio') {
@@ -42,6 +42,11 @@ function App() {
     });
     // setScrollY(Top);
   }
+
+  // .current.offsetTop-200
+  // .current: useRef 훅으로 생성된 참조 객체의 current 속성
+  // .offsetTop: DOM 요소의 offsetTop 속성은 해당 요소의 상단이 가장 가까운 상대적으로 배치된 조상 요소의 상단에서부터 얼마나 떨어져 있는지
+  // -200: 만약에 About Me라면 이 요소 가로 정중앙이 0이고 위로 200만큼 떨어진 곳
 
   return (
     <>
