@@ -35,7 +35,7 @@ const Portfolio = memo(({ refs }) => {
             >
               github link
             </a>
-            <a className="button" href="https://book-do-7-stars.netlify.app/">
+            <a className="button" href="https://bookdo-bookstore.netlify.app/">
               publish link
             </a>
           </div>
