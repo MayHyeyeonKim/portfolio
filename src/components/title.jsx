@@ -13,10 +13,10 @@ const Title = memo(() => {
         <div className="line"></div>
         <h1>May Kim</h1>
         <h2>Web Portfolio</h2>
-        <h4>
+        <h2>
         Hello, I am a Full Stack Engineer.
           <br /> I always enjoy developing new things and find great satisfaction in solving problems with persistence.
-        </h4>
+        </h2>
       </div>
     </section>
   );

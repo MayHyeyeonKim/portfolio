@@ -1,3 +1,4 @@
+@import 'colors';
 $color-bg: #efeeee;
 $color-shadow: #b6b4b4;
 $color-white: #fff;
@@ -11,7 +12,7 @@ header {
   position: fixed;
   z-index: 9;
   display: flex;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+  // box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 
   a {
     text-decoration: none;
@@ -33,8 +34,8 @@ header {
     .navbar__logo {
       font-size: 24px;
       color: #000;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3),
-        -2px -2px 4px rgba(255, 255, 255, 1);
+      // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3),
+      //   -2px -2px 4px rgba(255, 255, 255, 1);
       font-weight: bold;
     }
 
@@ -44,7 +45,7 @@ header {
 
       li {
         margin: 0 10px;
-        box-shadow: -4px -4px 13px $color-white, 4px 4px 13px $color-shadow;
+        // box-shadow: -4px -4px 13px $color-white, 4px 4px 13px $color-shadow;
         transition: all 0.2s ease-in-out;
         border-radius: 10px;
 
@@ -70,7 +71,7 @@ header {
     font-size: 25px;
     display: none;
 
-    box-shadow: -4px -4px 13px $color-white, 4px 4px 13px $color-shadow;
+    // box-shadow: -4px -4px 13px $color-white, 4px 4px 13px $color-shadow;
     transition: all 0.2s ease-in-out;
     border-radius: 10px;
     color: dimgray;

@@ -1,3 +1,4 @@
+@import 'colors';
 .title_container {
   margin-top: 60px;
   position: relative;
@@ -48,11 +49,11 @@
       margin-top: 20px;
     }
 
-    h4 {
+    h2 {
       margin-top: 30px;
     }
     .line {
-      background-color: rgb(16, 248, 8);
+      background-color: $primary-color;
       width: 200px;
       height: 16px;
     }
