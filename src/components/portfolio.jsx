@@ -7,7 +7,10 @@ import ylh from "../images/ylh.png";
 import hnm from "../images/hnm.png";
 import DAS from "../images/DAS_GFL.png"
 import X from "../images/Demo.gif"
-import awardBadge from "../images/award-badge.png"; 
+import bronze from "../images/bronze.png"; 
+import silver from "../images/silver.png"; 
+
+
 
 const Portfolio = memo(({ refs }) => {
   return (
@@ -57,7 +60,7 @@ const Portfolio = memo(({ refs }) => {
 
           {/* Award Badge */}
             <div className="badge-area">
-              <img src={awardBadge} alt="Award Badge" className="award-badge" />
+              <img src={bronze} alt="Award Badge" className="award-badge" />
             </div>
 
             <div className="picture-area">
@@ -100,7 +103,7 @@ const Portfolio = memo(({ refs }) => {
 
           {/* Award Badge */}
           <div className="badge-area">
-              <img src={awardBadge} alt="Award Badge" className="award-badge" />
+              <img src={silver} alt="Award Badge" className="award-badge" />
             </div>
 
             <div className="picture-area">
