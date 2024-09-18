@@ -5,6 +5,7 @@ $color-white: #fff;
 $color-red: #ae1100;
 $ruler: 16px;
 
+
 .portfolio-section {
   .portfolio-content {
     display: flex;
@@ -35,11 +36,16 @@ $ruler: 16px;
           border-radius: 50%; /* 원형으로 만들기 */
           line-height: 90px; /* 숫자를 중앙에 오도록 정렬 */
           box-sizing: border-box; /* 테두리를 포함한 박스 크기 계산 */
+
+            .badge-suffix {
+              font-size: 20px; /* 'nd'를 숫자보다 작게 */
+              vertical-align: super; /* 위 첨자로 올리기 */
+            }
         }
         .badge-num-area {
           position: absolute;
-          top: -15px;
-          right: -20px;
+          top: -22px;
+          right: -22px;
           width: 100px;
           height: 100px;
           z-index: 4; /* 다른 요소 위에 나타나도록 설정 */
@@ -94,7 +100,42 @@ $ruler: 16px;
 
         .contents {
           color: rgb(126, 126, 126);
+        
+          .cur {
+            color: $color-red;
+            // font-weight: bold;
+            // animation: blink 1.0s step-start infinite; 
+          }
         }
+
+        /* 깜빡이는 애니메이션 설정 */
+          @keyframes blink {
+            0% {
+              opacity: 1;
+            }
+            50% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+
+          /* highlight-blink 클래스 스타일링 */
+          .highlight-blink {
+            color: $color-red;
+            // animation: blink 1.5s step-start infinite; 
+          }
+
+        
+        /* 깜빡임 애니메이션 정의 */
+        @keyframes blink {
+          50% {
+            opacity: 0; /* 투명도를 0으로 설정하여 깜빡임 효과 생성 */
+          }
+        }
+        
+        
 
         .button {
           box-shadow: -4px -4px 13px $color-white, 4px 4px 13px $color-shadow;

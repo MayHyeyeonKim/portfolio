@@ -26,7 +26,7 @@ const Portfolio = memo(({ refs }) => {
             </div>
             <div className="title">Digital Aid Seattle</div>
             <div className="contents">
-            Currently work here
+            <span className="cur">Currently working here</span>
               <br />
               <br /> Games for Love is a Gaming Charity dedicated to easing suffering, saving lives, and creating sustainable futures for children. We help kids heal through play. Games for Love began with a dream to benefit sick kids, and allow everyday heroes in #Gaming and #Tech to help children through their gifts and talents. 
             </div>
@@ -50,7 +50,9 @@ const Portfolio = memo(({ refs }) => {
 
           {/* Award NumBadge */}
           <div className="badge-num-area">
-              <p className="badge-num">3</p>
+              <p className="badge-num">
+                3<sup className="badge-suffix">rd</sup>
+              </p>
           </div>
 
           {/* Award Badge */}
@@ -68,7 +70,8 @@ const Portfolio = memo(({ refs }) => {
             <div className="contents">
               Team Project 2024
               <br />
-              <br /> 97.1K subscribers YouTube REACT Award Winner
+              <br /> 
+              <span className="highlight-blink">97.1K subscribers YouTube REACT Award Winner</span>
               <br /> ExploreX is a travel booking and activity management platform built using React. This project was developed by a team of five as a group project.
               <br /> Built with React, React Query and deployed using Netlify.
             </div>
@@ -90,7 +93,9 @@ const Portfolio = memo(({ refs }) => {
 
           {/* Award NumBadge */}
           <div className="badge-num-area">
-              <p className="badge-num">2</p>
+              <p className="badge-num">
+                2<sup className="badge-suffix">nd</sup>
+              </p>
           </div>
 
           {/* Award Badge */}
@@ -108,7 +113,8 @@ const Portfolio = memo(({ refs }) => {
             <div className="contents">
               Team Project 2024
               <br />
-              <br /> 97.1K subscribers YouTube Node FullStack Award Winner
+              <br /> 
+              <span className="highlight-blink">97.1K subscribers YouTube Node FullStack Award Winner</span>
               <br /> Built with MongoDB, Express, React, Redux, and Node.js, and
               deployed using AWS Elastic Beanstalk.
             </div>
