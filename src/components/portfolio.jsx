@@ -7,6 +7,7 @@ import ylh from "../images/ylh.png";
 import hnm from "../images/hnm.png";
 import DAS from "../images/DAS_GFL.png"
 import X from "../images/Demo.gif"
+import awardBadge from "../images/award-badge.png"; 
 
 const Portfolio = memo(({ refs }) => {
   return (
@@ -28,7 +29,6 @@ const Portfolio = memo(({ refs }) => {
             Currently work here
               <br />
               <br /> Games for Love is a Gaming Charity dedicated to easing suffering, saving lives, and creating sustainable futures for children. We help kids heal through play. Games for Love began with a dream to benefit sick kids, and allow everyday heroes in #Gaming and #Tech to help children through their gifts and talents. 
-             
             </div>
             <a
               className="button"
@@ -45,8 +45,19 @@ const Portfolio = memo(({ refs }) => {
         </div>
 
         {/* exploreX */}
-        <div className="portfolio-info-area">
+        <div className="portfolio-info-area explorex-award">
           <div className="portfolio-info">
+
+          {/* Award NumBadge */}
+          <div className="badge-num-area">
+              <p className="badge-num">3</p>
+          </div>
+
+          {/* Award Badge */}
+            <div className="badge-area">
+              <img src={awardBadge} alt="Award Badge" className="award-badge" />
+            </div>
+
             <div className="picture-area">
               <img
                 src={X}
@@ -76,6 +87,17 @@ const Portfolio = memo(({ refs }) => {
         {/* bookdo7stars */}
         <div className="portfolio-info-area">
           <div className="portfolio-info">
+
+          {/* Award NumBadge */}
+          <div className="badge-num-area">
+              <p className="badge-num">2</p>
+          </div>
+
+          {/* Award Badge */}
+          <div className="badge-area">
+              <img src={awardBadge} alt="Award Badge" className="award-badge" />
+            </div>
+
             <div className="picture-area">
               <img
                 src={bookdo}
