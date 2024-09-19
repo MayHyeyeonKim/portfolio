@@ -24,6 +24,9 @@ const Navbar = memo(({ handleScroll }) => {
               <button onClick={() => handleScroll("skills")}>Skills</button>
             </li>
             <li>
+              <button onClick={() => handleScroll("awards")}>Awards</button>
+            </li>
+            <li>
               <button onClick={() => handleScroll("portfolio")}>Portfolio</button>
             </li>
           </ul>
@@ -56,6 +59,16 @@ const Navbar = memo(({ handleScroll }) => {
                 Skills
               </button>
             </li>
+            <li>
+              <button
+                onClick={() => {
+                  handleScroll("awards");
+                  click();
+                }}
+              >
+                Awards
+              </button>
+            </li> 
             <li>
               <button
                 onClick={() => {

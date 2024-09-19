@@ -1,0 +1,176 @@
+@import 'colors';
+$color-bg: #efeeee;
+$color-shadow: #b6b4b4;
+$color-white: #fff;
+$color-red: #ae1100;
+$ruler: 16px;
+
+
+.awards-section {
+  .portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 520px;
+
+    .portfolio-info-area {
+      min-height: 200px;
+      flex-basis: 50%;
+      padding: 20px;
+      box-sizing: border-box;
+
+      .portfolio-info {
+        border: 1px solid #efeeee;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: -7px -7px 13px $color-white, 4px 4px 13px $color-shadow;
+        position: relative;
+        padding: 20px;
+        box-sizing: border-box;
+
+        .badge-num{
+          font-size: 50px; /* 숫자 크기 조정 */
+          font-weight: bold; /* 숫자 두껍게 */
+          color: rgb(243, 233, 178); /* 금색 느낌의 색상 */
+          text-align: center; /* 중앙 정렬 */
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 그림자 효과로 입체감 추가 */
+          border-radius: 50%; /* 원형으로 만들기 */
+          line-height: 90px; /* 숫자를 중앙에 오도록 정렬 */
+          box-sizing: border-box; /* 테두리를 포함한 박스 크기 계산 */
+
+            .badge-suffix {
+              font-size: 20px; /* 'nd'를 숫자보다 작게 */
+              vertical-align: super; /* 위 첨자로 올리기 */
+            }
+        }
+        .badge-num-area {
+          position: absolute;
+          top: -22px;
+          right: -22px;
+          width: 100px;
+          height: 100px;
+          z-index: 4; /* 다른 요소 위에 나타나도록 설정 */
+
+          .award-badge {
+            width: 100%; /* 크기 조정 */
+            height: auto;
+          }
+        }
+
+        .badge-area {
+          position: absolute;
+          top: -20px;
+          right: -20px;
+          width: 100px;
+          height: 100px;
+          z-index: 2; /* 다른 요소 위에 나타나도록 설정 */
+
+          .award-badge {
+            width: 100%; /* 크기 조정 */
+            height: auto;
+          }
+        }
+
+        .picture-area {
+          height: 300px;
+          background-image: url("../images/seattle_night.jpg");
+          border-radius: 10px 10px 0px 0;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          top: 0;
+          left: 0;
+          width: 100%;
+          position: absolute;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .title {
+          margin-top: 310px;
+          font-size: 28px;
+          font-weight: bold;
+          color: dimgray;
+          word-break: keep-all;
+        }
+
+        .contents {
+          color: rgb(126, 126, 126);
+        
+          .cur {
+            color: $color-red;
+            // font-weight: bold;
+            // animation: blink 1.0s step-start infinite; 
+          }
+        }
+
+        /* 깜빡이는 애니메이션 설정 */
+          @keyframes blink {
+            0% {
+              opacity: 1;
+            }
+            50% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+
+          /* highlight-blink 클래스 스타일링 */
+          .highlight-blink {
+            color: $color-red;
+            // animation: blink 1.5s step-start infinite; 
+          }
+
+        
+        /* 깜빡임 애니메이션 정의 */
+        @keyframes blink {
+          50% {
+            opacity: 0; /* 투명도를 0으로 설정하여 깜빡임 효과 생성 */
+          }
+        }
+        
+        
+
+        .button {
+          box-shadow: -4px -4px 13px $color-white, 4px 4px 13px $color-shadow;
+          transition: all 0.2s ease-in-out;
+          border-radius: 10px;
+          cursor: pointer;
+          text-decoration: none;
+          padding: 10px;
+          margin-top: 20px;
+          margin-right: 10px;
+          display: inline-block;
+          color: dimgray;
+          font-weight: bold;
+
+          &:hover {
+            box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
+            color: orange;
+          }
+
+          &:active {
+            box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-section {
+    .portfolio-content {
+      .portfolio-info-area {
+        flex-basis: 100%;
+        padding: 10px 20px;
+      }
+    }
+  }
+}
