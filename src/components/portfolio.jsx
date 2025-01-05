@@ -5,33 +5,33 @@ import bookdo from "../images/bookdo.png";
 import pad from "../images/pad.png";
 import ylh from "../images/ylh.png";
 import hnm from "../images/hnm.png";
-import DAS from "../images/DAS_GFL.png"
-import X from "../images/Demo.gif"
-import bronze from "../images/bronze.png"; 
-import silver from "../images/silver.png"; 
-
-
+import DAS from "../images/DAS_GFL.png";
+import X from "../images/Demo.gif";
+import bronze from "../images/bronze.png";
+import silver from "../images/silver.png";
 
 const Portfolio = memo(({ refs }) => {
   return (
     <section ref={refs} className="portfolio-section">
       <div className="section-title">PORTFOLIO</div>
       <div className="portfolio-content">
-
         {/* games for love */}
         <div className="portfolio-info-area">
           <div className="portfolio-info">
             <div className="picture-area">
-              <img
-                src={DAS}
-                alt="죄송합니다 이미지를 불러오지 못했습니다."
-              />
+              <img src={DAS} alt="죄송합니다 이미지를 불러오지 못했습니다." />
             </div>
             <div className="title">Digital Aid Seattle</div>
             <div className="contents">
-            <span className="cur">Currently working here</span>
+              {/* <span className="cur">Currently working here</span> */}
+              Previous working here <br />
               <br />
-              <br /> Games for Love is a Gaming Charity dedicated to easing suffering, saving lives, and creating sustainable futures for children. We help kids heal through play. Games for Love began with a dream to benefit sick kids, and allow everyday heroes in #Gaming and #Tech to help children through their gifts and talents. 
+              <br /> Games for Love is a Gaming Charity dedicated to easing
+              suffering, saving lives, and creating sustainable futures for
+              children. We help kids heal through play. Games for Love began
+              with a dream to benefit sick kids, and allow everyday heroes in
+              #Gaming and #Tech to help children through their gifts and
+              talents.
             </div>
             <a
               className="button"
@@ -42,8 +42,15 @@ const Portfolio = memo(({ refs }) => {
             <a className="button" href="https://games-for-love.web.app/">
               publish link
             </a>
-            <a className="button" href="https://www.digitalaidseattle.org/">DAS</a>
-            <a className="button" href="https://www.digitalaidseattle.org/project/recjTnXhnU7hkRDDb">GFL</a>
+            <a className="button" href="https://www.digitalaidseattle.org/">
+              DAS
+            </a>
+            <a
+              className="button"
+              href="https://www.digitalaidseattle.org/project/recjTnXhnU7hkRDDb"
+            >
+              GFL
+            </a>
           </div>
         </div>
 
