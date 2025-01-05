@@ -25,7 +25,6 @@ const Portfolio = memo(({ refs }) => {
             <div className="contents">
               {/* <span className="cur">Currently working here</span> */}
               Previous working here <br />
-              <br />
               <br /> Games for Love is a Gaming Charity dedicated to easing
               suffering, saving lives, and creating sustainable futures for
               children. We help kids heal through play. Games for Love began
