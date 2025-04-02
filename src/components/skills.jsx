@@ -11,6 +11,7 @@ import {
   Bootstrap,
   Tailwindcss,
   Javascript,
+  Typescript,
   Html5,
   CssThree,
   Materialui,
@@ -121,6 +122,12 @@ const Skills = memo(({ refs }) => {
               <Express color="#000000" size={50} />
             </div>
             <p className="skill-info">Express</p>
+          </div>
+          <div className="skill-group">
+            <div className="skill">
+              <Typescript color="#F7DF1E" size={50} />
+            </div>
+            <p className="skill-info">TS</p>
           </div>
           <div className="skill-group">
             <div className="skill">
