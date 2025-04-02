@@ -54,12 +54,12 @@ const About = memo(({ refs }) => {
               <div className="info-li">
                 <IoBriefcase className="icon" />{" "}
                 <a
-                  href="https://stigmilearning.com/"
+                  href="https://www.digitalaidseattle.org/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {" "}
-                  Stigmi Learning
+                  Digital Aid Seattle
                 </a>
               </div>
             </li>
