@@ -7,43 +7,67 @@ import vibeverse from "./images/vibeverse_demo.gif";
 const projects = [
   {
     number: "01",
-    title: "BSideU side-project community",
+    title: "BSideU collaboration platform",
     description:
-      "A work-in-progress community platform for people who want to find collaborators and build side projects together. My contribution focuses on documenting AI workflows and establishing a structured AI-assisted development process for the team.",
-    tags: ["Community product", "AI workflow docs", "AI-assisted development", "In progress"],
-    type: "Team side project · In progress",
+      "A platform that matches people with complementary skills and interests so they can find collaborators and build projects together. I'm currently documenting the team's AI workflows and shaping a structured AI-assisted development process. I'll share more as the platform evolves—stay tuned.",
+    tags: ["Community product", "AI workflow docs", "AI-assisted development"],
+    type: "Team side project",
+    badge: "In progress",
     livePreview: true,
     previewUrl: "https://app.bsideu.ca/",
     link: "https://app.bsideu.ca/",
+    landingPage: "https://www.bsideu.ca/",
     caseStudy: "https://mayhyeyeonkim.github.io/ai/development/bsideu-ai-assisted-development/",
   },
   {
     number: "02",
     title: "VibeVerse personalized recommendation system",
     description:
-      "A personalized review and recommendation system powered by LLMs. The application extracts structured insights from natural-language reviews and uses them to generate more relevant place recommendations.",
+      "An AI-powered place discovery app with a chat interface for writing reviews and getting personalized recommendations. It uses OpenAI and Google models through the Vercel AI SDK, and Orama's local vector search to retrieve relevant context for recommendations.",
     tags: ["LLM", "Structured extraction", "Recommendations", "Next.js"],
-    type: "Best Idea Award · Hackathon project",
+    type: "Hackathon project",
+    award: "Best Idea Award",
+    awardRank: "★",
+    awardTone: "gold",
     image: vibeverse,
     link: "https://github.com/MayHyeyeonKim/VibeVerse",
     linkLabel: "View repository",
   },
   {
     number: "03",
-    title: "BookDo online bookstore",
+    title: "BookDo online bookstore · TypeScript migration",
     description:
-      "A TypeScript and Next.js migration of an award-winning online bookstore project, rebuilt with PostgreSQL and a more strongly typed full-stack architecture.",
-    tags: ["TypeScript", "Next.js", "PostgreSQL", "Redux Saga"],
-    type: "Migration project · Award-winning original",
-    image: bookdo,
-    link: "https://github.com/BookDo7starsTS/bookdo7stars_fe",
-    linkLabel: "View repository",
-    source: "https://github.com/orgs/7CodeCrew/repositories",
-    sourceLabel: "Award-winning original",
+      "A separate TypeScript and Next.js migration of the original BookDo bookstore, rebuilt with PostgreSQL and deployed on AWS. Amplify hosts the frontend; the backend API and database run on Lightsail.",
+    tags: ["TypeScript", "Next.js", "PostgreSQL", "AWS Amplify", "AWS Lightsail"],
+    type: "Full-stack migration · AWS deployment",
+    livePreview: true,
+    previewUrl: "https://main.d1ldizf46l0xpq.amplifyapp.com/",
+    link: "https://main.d1ldizf46l0xpq.amplifyapp.com/",
+    linkLabel: "View live site",
+    frontendRepository: "https://github.com/BookDo7starsTS/bookdo7stars_fe",
+    source: "https://github.com/BookDo7starsTS/bookdo7stars_be",
+    sourceLabel: "Backend",
+    apiDocs: "https://bookdo7stars-api.duckdns.org/api-docs/",
   },
   {
     number: "04",
-    title: "YoungLeeHan Korean education platform",
+    title: "BookDo online bookstore",
+    description:
+      "The original team bookstore, built with MongoDB, Express, React, Redux, and Node.js. Our team won second place in a project competition hosted by Koalnu, a YouTuber with 139K subscribers. This original version is presented separately from my later TypeScript and Next.js migration.",
+    tags: ["MongoDB", "Express", "React", "Redux", "Node.js"],
+    type: "Original · Team project",
+    award: "2nd Place",
+    awardRank: "2",
+    awardTone: "silver",
+    image: bookdo,
+    link: "https://github.com/orgs/7CodeCrew/repositories",
+    linkLabel: "Award-winning original",
+    source: "https://bookdo-bookstore.netlify.app/",
+    sourceLabel: "Original live site",
+  },
+  {
+    number: "05",
+    title: "YoungLeeHan Korean education e-commerce platform",
     description:
       "A professional e-commerce platform for creating and selling Korean language learning worksheets to educational institutions and individual learners.",
     tags: ["MERN", "React", "Node.js", "MongoDB"],
@@ -55,6 +79,41 @@ const projects = [
     source: "https://github.com/YoungLeeHan/YoungleehanKorean",
   },
 ];
+
+function AwardMedal({ rank, tone }) {
+  const leaves = Array.from({ length: 5 }, (_, index) => {
+    const x = 16 + index * 2.5;
+    const y = 46 - index * 4.3;
+    return { x, y, key: index };
+  });
+  const rosettePoints = Array.from({ length: 64 }, (_, index) => {
+    const angle = (index * Math.PI) / 32 - Math.PI / 2;
+    const radius = index % 2 === 0 ? 27 : 24.5;
+    return `${32 + Math.cos(angle) * radius},${34 + Math.sin(angle) * radius}`;
+  }).join(" ");
+
+  return (
+    <svg className={`project-award-medal ${tone}`} viewBox="0 0 64 76" aria-hidden="true">
+      <path className="medal-ribbon" d="M18 39 16 69l9-6 7 10 4-29zM30 44l5 29 7-10 9 6-4-30z" />
+      <polygon className="medal-edge" points={rosettePoints} />
+      <circle className="medal-face" cx="32" cy="34" r="22" />
+      <circle className="medal-inner-ring" cx="32" cy="34" r="19" />
+      <g className="laurel-branch">
+        <path d="M14 50c-3-12 1-24 10-32" />
+        {leaves.map(({ x, y, key }) => (
+          <ellipse key={key} cx={x} cy={y} rx="2.6" ry="5.2" transform={`rotate(-38 ${x} ${y})`} />
+        ))}
+      </g>
+      <g className="laurel-branch" transform="translate(64 0) scale(-1 1)">
+        <path d="M14 50c-3-12 1-24 10-32" />
+        {leaves.map(({ x, y, key }) => (
+          <ellipse key={key} cx={x} cy={y} rx="2.6" ry="5.2" transform={`rotate(-38 ${x} ${y})`} />
+        ))}
+      </g>
+      <text className="medal-rank" x="32" y="42" textAnchor="middle">{rank}</text>
+    </svg>
+  );
+}
 
 function Arrow() {
   return <span aria-hidden="true">↗</span>;
@@ -108,9 +167,11 @@ function App() {
         <section className="proof-strip" aria-label="Core technologies">
           <div className="section-wrap proof-inner">
             <span>Working across</span>
+            <p>JavaScript</p>
             <p>React</p>
             <p>TypeScript</p>
             <p>Node.js</p>
+            <p>AWS</p>
             <p>SQL + NoSQL</p>
             <p>Agentic workflows</p>
           </div>
@@ -119,13 +180,22 @@ function App() {
         <section className="work section-wrap" id="work">
           <div className="section-heading">
             <p className="eyebrow">SELECTED WORK</p>
-            <p className="section-note">Four selected builds across product, systems, and AI.</p>
+            <p className="section-note">Five selected builds across product, systems, and AI.</p>
           </div>
           <div className="project-list">
             {projects.map((project) => (
               <article className="project" key={project.number}>
                 <div className="project-meta">
-                  <span>{project.number}</span>
+                  <div className="project-index">
+                    <span>{project.number}</span>
+                    {project.award && (
+                      <span className="project-award">
+                        <AwardMedal rank={project.awardRank} tone={project.awardTone} />
+                        {project.award}
+                      </span>
+                    )}
+                    {project.badge && <span className="project-status">{project.badge}</span>}
+                  </div>
                   <span>{project.type}</span>
                 </div>
                 <div className="project-main">
@@ -139,9 +209,24 @@ function App() {
                       <a href={project.link} target="_blank" rel="noreferrer">
                         {project.linkLabel || "View project"} <Arrow />
                       </a>
+                      {project.landingPage && (
+                        <a href={project.landingPage} target="_blank" rel="noreferrer">
+                          Landing page <Arrow />
+                        </a>
+                      )}
+                      {project.frontendRepository && (
+                        <a href={project.frontendRepository} target="_blank" rel="noreferrer">
+                          Frontend <Arrow />
+                        </a>
+                      )}
                       {project.source && (
                         <a href={project.source} target="_blank" rel="noreferrer">
                           {project.sourceLabel || "Source"} <Arrow />
+                        </a>
+                      )}
+                      {project.apiDocs && (
+                        <a href={project.apiDocs} target="_blank" rel="noreferrer">
+                          Explore API <Arrow />
                         </a>
                       )}
                       {project.caseStudy && (
@@ -188,9 +273,10 @@ function App() {
             </div>
           </div>
           <div className="capabilities">
-            <div><span>01</span><strong>Product engineering</strong><p>React, TypeScript, responsive UI</p></div>
+            <div><span>01</span><strong>Product engineering</strong><p>JavaScript, React, TypeScript, responsive UI</p></div>
             <div><span>02</span><strong>Backend systems</strong><p>Node.js, APIs, integrations, testing</p></div>
-            <div><span>03</span><strong>Data + AI</strong><p>SQL, MongoDB, RAG, agentic workflows</p></div>
+            <div><span>03</span><strong>Data systems</strong><p>SQL, MongoDB, vector databases, schema design</p></div>
+            <div><span>04</span><strong>AI &amp; agent workflows</strong><p>Claude/OpenAI integrations, RAG pipelines, agent harnesses, output evaluation</p></div>
           </div>
         </section>
 

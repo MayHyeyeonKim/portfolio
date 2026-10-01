@@ -1,0 +1,58 @@
+                                                          May Kim
+    Seattle, Washington | 707-729-0760 | devmay202@gmail.com | portfolio | github | linkedin.com/in/hykim-may
+                                                    ​
+​   Full-stack software engineer building production web applications with React, JavaScript, TypeScript,
+       and Node.js. Experienced in APIs, databases, testing, debugging, and practical AI integrations.
+
+
+    TECHNICAL SKILLS
+     Frontend: React, Next.js, TypeScript, JavaScript, Redux, MUI, HTML, CSS​
+     Backend & Databases: Node.js, Express, MongoDB, PostgreSQL, MySQL, REST APIs
+     Testing & Tools: Vitest, React Testing Library, Unit & Integration Testing, Git, Microsoft Azure​
+     AI Development: OpenAI API, Claude Code, Codex, RAG, Vector Search, Agentic Development Workflows​
+     Certifications: Microsoft Certified: Azure Fundamentals (AZ-900), Azure AI Fundamentals (AI-900)
+
+    EXPERIENCE
+     Full-Stack Web Developer — Wilson & Company, Inc. | Albuquerque, New Mexico​                           May 2025 – April 2026
+
+         • Migrated an internal app used by 1,000+ employees to TypeScript, improving type safety with shared types.
+         • Developed 20+ APIs for Power BI and Informer reporting workflows, including unit and integration tests.
+         • Built a reporting pipeline extracting data from 50+ MySQL tables and storing MongoDB snapshots.
+         • Diagnosed and fixed a Samsung tablet font issue by bundling fonts locally for consistent rendering.
+         • Built usage metrics for heavily used intranet widgets, enabling data-driven insights into feature adoption.
+     ​
+
+     Full-Stack Web Developer (Contract) — Stigma Learning | Tenafly, New Jersey​                  January 2025 – February 2025
+
+         • Worked on full-stack development in an early-stage startup, building React UIs with React Query & Redux.
+         • Improved backend performance by refactoring core systems and reducing query time by 29%.
+         • Optimized booking and scheduling with Tailwind UI, cutting no-shows by 75% and earning a 4.9 rating.
+         • Designed B2B integrations with Twilio, GoHighLevel, and AWS SES to automate tutor–learner messaging.
+     ​
+
+     Software Engineer — Digital Aid Seattle | Seattle, Washington​                                      February 2024 – May 2025
+
+         • Built a full-stack donation platform for a nonprofit, contributing across frontend, backend, and system design.
+         • Resolved critical backend issues, increasing sprint task completion by 34% and accelerating team progress.
+         • Integrated Airtable as a NoSQL database for hospital data, leveraging its API to cut response time by 40%.
+         • Integrated Fundraise Up, a B2B financial donation platform, using React, TypeScript, and Context API to
+         enhance scalability and user experience.
+
+    SELECTED PROJECTS & HACKATHON AWARDS
+     BSideU, AI-Assisted Development Workflow​                                               June 2026 – Present
+      • Designed AI development workflows for Claude Code and Codex using coding guidelines, architecture
+      context, and specialized agents for implementation, debugging, and code review.​
+
+     LLM + RAG Recommendation System Best Award Winner, Changbal Innovation Hackathon​                  April 2025
+      • Awarded for building an LLM-powered recommendation system using vector search and
+      Retrieval-Augmented Generation (RAG), with an AI chat interface and persistent storage via Orama.
+
+     ExploreX – Travel Booking and Activity Platform, 3rd Place Winner, Coalnu Hackathon​           September 2024
+      • Built a mobile-responsive travel platform with React, integrating Google Maps, Amadeus, Booking.com, and
+      Stripe APIs for real-time search, reservation, and payments.
+
+    EDUCATION
+     Georgia Institute of Technology, Master of Science in Computer Science (OMSCS)                          Incoming Spring 2027
+     Seattle Central College, Web Development Associate of Applied Science - Transfer | GPA 3.94/4.00​                 June 2024​
+     Pusan National University, Bachelor of Fine Arts | GPA 3.77/4.00 ​                                             February 2012
+
